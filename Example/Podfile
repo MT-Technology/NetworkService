@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MTWebServiceManager_Example' do
+  pod 'MTWebServiceManager', :path => '../'
+
+  target 'MTWebServiceManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
