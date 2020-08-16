@@ -226,19 +226,21 @@ private class MTWebserviceResponseParse {
             }
             
             var webServiceResponse = MTWebServiceResponse()
+            let httpUrlResponse = urlResponse as? HTTPURLResponse
             if let _ = error {
                 let (status, message) = self.statusAndMessageForError(error!)
                 webServiceResponse.status = status
                 webServiceResponse.errorMessage = message ?? ""
+                webServiceResponse.statusCode = httpUrlResponse?.statusCode ?? 404
                 DispatchQueue.main.async(execute: {
                     completionHandler(webServiceResponse)
                 })
             }else {
-                let httpUrlResponse = urlResponse as? HTTPURLResponse
                 let (status, message) = self.statusAndMessageForHttpStatusCode(httpUrlResponse?.statusCode ?? 404)
                 webServiceResponse.status = status
                 webServiceResponse.errorMessage = message ?? ""
                 webServiceResponse.response = response
+                webServiceResponse.statusCode = httpUrlResponse?.statusCode ?? 404
                 
                 print(response ?? "No hay respuesta del servicio")
                 
@@ -266,6 +268,7 @@ public struct MTWebServiceResponse {
     /// This value contain the response's headers
     public var headers : [String: Any]? = nil
     
+    public var statusCode: Int = 0
     init() {
         
     }
