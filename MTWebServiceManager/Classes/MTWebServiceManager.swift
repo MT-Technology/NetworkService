@@ -226,6 +226,7 @@ private class MTWebserviceResponseParse {
             }
             
             var webServiceResponse = MTWebServiceResponse()
+            webServiceResponse.responseData = data
             let httpUrlResponse = urlResponse as? HTTPURLResponse
             if let _ = error {
                 let (status, message) = self.statusAndMessageForError(error!)
@@ -269,6 +270,8 @@ public struct MTWebServiceResponse {
     public var headers : [String: Any]? = nil
     
     public var statusCode: Int = 0
+    
+    public var responseData: Data? = nil
     init() {
         
     }
