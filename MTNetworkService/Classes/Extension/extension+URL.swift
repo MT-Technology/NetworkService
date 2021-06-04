@@ -9,7 +9,7 @@ import Foundation
 
 extension URL{
     
-    init?(networkUri: NetworkUri) {
+    init?(networkUri: MTNetworkUri) {
         self.init(string: networkUri.getUrlString())
     }
 }

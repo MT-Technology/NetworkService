@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum NetworkMethod : String{
+public enum MTNetworkMethod : String{
     
     case post   = "POST"
     

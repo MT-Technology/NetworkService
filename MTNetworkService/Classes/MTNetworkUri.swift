@@ -8,14 +8,14 @@
 import Foundation
 
 
-public protocol NetworkUriProtocol {
+public protocol MTNetworkUriProtocol {
     
-    func setQueryParameters(queryParameters: [String:Any]) -> NetworkUriProtocol
+    func setQueryParameters(queryParameters: [String:Any]) -> MTNetworkUriProtocol
     
-    func getNetworkUri() -> NetworkUri
+    func getNetworkUri() -> MTNetworkUri
 }
 
-public class NetworkUri{
+public class MTNetworkUri{
     
     var baseUrl: String
     
@@ -34,15 +34,15 @@ public class NetworkUri{
     }
 }
 
-public class NetworkUriGenerator: NetworkUriProtocol{
+public class MTNetworkUriGenerator: MTNetworkUriProtocol{
     
-    private var networkUri: NetworkUri
+    private var networkUri: MTNetworkUri
     
     public init(baseUrl: String, endPoint: String) {
-        networkUri = NetworkUri(baseUrl: baseUrl, endPoint: endPoint)
+        networkUri = MTNetworkUri(baseUrl: baseUrl, endPoint: endPoint)
     }
     
-    public func setQueryParameters(queryParameters: [String : Any]) -> NetworkUriProtocol {
+    public func setQueryParameters(queryParameters: [String : Any]) -> MTNetworkUriProtocol {
         
         var queryParameterString = ""
         var paramArray = [String]()
@@ -56,8 +56,8 @@ public class NetworkUriGenerator: NetworkUriProtocol{
         
     }
     
-    public func getNetworkUri() -> NetworkUri {
-        defer {networkUri = NetworkUri(baseUrl: networkUri.baseUrl, endPoint: networkUri.endPoint)}
+    public func getNetworkUri() -> MTNetworkUri {
+        defer {networkUri = MTNetworkUri(baseUrl: networkUri.baseUrl, endPoint: networkUri.endPoint)}
         return networkUri
     }
 }

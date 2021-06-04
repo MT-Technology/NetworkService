@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct NetworkResponse {
+public struct MTNetworkResponse {
     
     public var data: Data?
     

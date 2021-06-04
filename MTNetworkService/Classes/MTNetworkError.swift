@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum NetworkError: Error{
+public enum MTNetworkError: Error{
     
     case wrongUrl
     case cantConvertParameters
@@ -15,7 +15,7 @@ public enum NetworkError: Error{
     case genericError
 }
 
-extension NetworkError: LocalizedError {
+extension MTNetworkError: LocalizedError {
     public var localizedDescription: String?{
         switch self {
         case .wrongUrl:

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/everis/Documents/Proyectos/MT-Technology/NetworkService/Example/NetworkService.xcodeproj">
+      location = "group:MTNetworkService.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

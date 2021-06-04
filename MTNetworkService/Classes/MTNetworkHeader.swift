@@ -17,19 +17,19 @@ public enum ContentType: String{
     case none       = ""
 }
 
-public protocol NetworkHeaderProtocol {
+public protocol MTNetworkHeaderProtocol {
     
-    func setToken(token: String) -> NetworkHeaderProtocol
+    func setToken(token: String) -> MTNetworkHeaderProtocol
     
-    func setHeaders(headers: [String: Any]) -> NetworkHeaderProtocol
+    func setHeaders(headers: [String: Any]) -> MTNetworkHeaderProtocol
     
-    func setContentType(contentType: ContentType) -> NetworkHeaderProtocol
+    func setContentType(contentType: ContentType) -> MTNetworkHeaderProtocol
     
-    func getNetworkHeader() -> NetworkHeader
+    func getNetworkHeader() -> MTNetworkHeader
     
 }
 
-public class NetworkHeader {
+public class MTNetworkHeader {
 
     var contentType: ContentType
     var headers : [String:Any]
@@ -40,20 +40,20 @@ public class NetworkHeader {
     }
 }
 
-public class NetworkHeaderGenerator: NetworkHeaderProtocol{
+public class MTNetworkHeaderGenerator: MTNetworkHeaderProtocol{
     
-    private var networkHeader: NetworkHeader
+    private var networkHeader: MTNetworkHeader
     
     public init() {
-        networkHeader = NetworkHeader()
+        networkHeader = MTNetworkHeader()
     }
     
-    public func setToken(token: String) -> NetworkHeaderProtocol {
+    public func setToken(token: String) -> MTNetworkHeaderProtocol {
         networkHeader.headers["Authorization"] = "Bearer \(token)"
         return self
     }
     
-    public func setHeaders(headers: [String : Any]) -> NetworkHeaderProtocol {
+    public func setHeaders(headers: [String : Any]) -> MTNetworkHeaderProtocol {
         
         var iterator = headers.makeIterator()
         while let header = iterator.next() {
@@ -62,14 +62,14 @@ public class NetworkHeaderGenerator: NetworkHeaderProtocol{
         return self
     }
     
-    public func setContentType(contentType: ContentType) -> NetworkHeaderProtocol {
+    public func setContentType(contentType: ContentType) -> MTNetworkHeaderProtocol {
         networkHeader.contentType = contentType
         networkHeader.contentType != .none ? networkHeader.headers["Content-Type"] = contentType.rawValue : nil
         return self
     }
     
-    public func getNetworkHeader() -> NetworkHeader {
-        defer {networkHeader = NetworkHeader()}
+    public func getNetworkHeader() -> MTNetworkHeader {
+        defer {networkHeader = MTNetworkHeader()}
         return networkHeader
     }
 }

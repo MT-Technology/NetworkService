@@ -9,7 +9,7 @@ import Foundation
 
 
 
-class NetworkBodyData {
+class MTNetworkBodyData {
     
     private var requestType: RequestType
     private var contentType: ContentType
@@ -67,7 +67,7 @@ class Raw: RequestBodyData {
             do{
                 return try JSONSerialization.data(withJSONObject: parameters, options: JSONSerialization.WritingOptions.prettyPrinted)
             }catch{
-                throw NetworkError.cantConvertParameters
+                throw MTNetworkError.cantConvertParameters
             }
         }
     }
@@ -87,7 +87,7 @@ class FormData: RequestBodyData {
         case .none:
             return nil
         case .jsonData(_):
-            throw NetworkError.cantConvertParameters
+            throw MTNetworkError.cantConvertParameters
         case .parameters(let parameters):
             return parseDictionaryToFormData(parameters: parameters)
         }
@@ -133,7 +133,7 @@ public enum RequestType {
     case none
 }
 
-public class NetworkParameter {
+public class MTNetworkParameter {
     
     private let requestType: RequestType
     
@@ -144,7 +144,7 @@ public class NetworkParameter {
     func getBodyData(contentType: ContentType) throws -> Data? {
         
         do{
-            return try NetworkBodyData(requestType: requestType, contentType: contentType).getBodyData()
+            return try MTNetworkBodyData(requestType: requestType, contentType: contentType).getBodyData()
         } catch {
             throw error
         }

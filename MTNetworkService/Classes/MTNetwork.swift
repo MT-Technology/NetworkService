@@ -7,12 +7,12 @@
 
 import Foundation
 
-class Network {
+class MTNetwork {
 
-    typealias completion = (Result<NetworkResponse, NetworkError>) -> Void
+    typealias completion = (Result<MTNetworkResponse, MTNetworkError>) -> Void
     
     @discardableResult
-    func networkTask(provider: NetworkProvider, completion: @escaping completion ) -> URLSessionTask? {
+    func networkTask(provider: MTNetworkProvider, completion: @escaping completion ) -> URLSessionTask? {
         switch provider.method {
         case .get, .delete:
             return getDataTask(provider: provider, completion: completion)
@@ -21,10 +21,10 @@ class Network {
         }
     }
     
-    func getRequest(provider: NetworkProvider) throws -> URLRequest {
+    func getRequest(provider: MTNetworkProvider) throws -> URLRequest {
         
         guard let url = URL(networkUri: provider.uri) else {
-            throw NetworkError.wrongUrl
+            throw MTNetworkError.wrongUrl
         }
         
         var request = URLRequest(url: url)
@@ -32,7 +32,7 @@ class Network {
         return request
     }
     
-    func getSession(provider: NetworkProvider) -> URLSession {
+    func getSession(provider: MTNetworkProvider) -> URLSession {
         
         let sessionConfiguration = URLSessionConfiguration.default
         sessionConfiguration.httpAdditionalHeaders = provider.header.headers
@@ -41,7 +41,7 @@ class Network {
     }
     
     func sendError(error: Error, completion: @escaping completion) {
-        guard let error = error as? NetworkError else {
+        guard let error = error as? MTNetworkError else {
             completion(.failure(.genericError))
             return
         }
@@ -57,7 +57,7 @@ class Network {
         }
         if let data = dataResponse,
            let urlResponse = urlResponse as? HTTPURLResponse{
-            var response = NetworkResponse()
+            var response = MTNetworkResponse()
             response.data = data
             response.statusCode = urlResponse.statusCode
             response.headers = urlResponse.allHeaderFields
@@ -66,7 +66,7 @@ class Network {
         }
     }
     
-    func getDataTask(provider: NetworkProvider, completion: @escaping completion ) -> URLSessionDataTask? {
+    func getDataTask(provider: MTNetworkProvider, completion: @escaping completion ) -> URLSessionDataTask? {
         
         var request: URLRequest
         do{
@@ -89,7 +89,7 @@ class Network {
         return task
     }
     
-    func getUploadTask(provider: NetworkProvider, completion: @escaping completion ) -> URLSessionUploadTask? {
+    func getUploadTask(provider: MTNetworkProvider, completion: @escaping completion ) -> URLSessionUploadTask? {
         
         var request: URLRequest
         do{
