@@ -2,7 +2,7 @@ platform :ios, '11.0'
 
 target 'NetworkService_Example' do
 
-  pod 'NetworkService', :path => '../'
+  pod 'MTNetworkService', :path => '../'
 
   target 'NetworkService_Tests' do
     inherit! :search_paths

@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'NetworkService'
+  s.name             = 'MTNetworkService'
   s.version          = '1.0.0'
   s.swift_version    = '5.0'
   s.summary          = 'NetworkServices is a framework that allow consume web service.'
