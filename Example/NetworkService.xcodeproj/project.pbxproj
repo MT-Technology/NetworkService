@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		009CCA7DF07F595B42ACC63D /* Pods_MTWebServiceManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590E7D368A77CF61E2B7862A /* Pods_MTWebServiceManager_Example.framework */; };
-		24FF70859533BE22C2C9E27C /* Pods_MTWebServiceManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28988EF756D00D3952084F87 /* Pods_MTWebServiceManager_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		65182F6A8478F4D27DE1CA69 /* libPods-MTWebServiceManager_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29EB980268F66B4B81BA782E /* libPods-MTWebServiceManager_Example.a */; };
+		BFE5CA9EED5B1D58696CE01A /* libPods-MTWebServiceManager_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4E1AEA33436EB873BEE0D3 /* libPods-MTWebServiceManager_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,21 +29,21 @@
 
 /* Begin PBXFileReference section */
 		00B7FFD2A4BF8829BC11E8F7 /* Pods-MTWebServiceManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTWebServiceManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTWebServiceManager_Example/Pods-MTWebServiceManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		209BDE2A615FA65EE5C97E06 /* MTWebServiceManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MTWebServiceManager.podspec; path = ../MTWebServiceManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		28988EF756D00D3952084F87 /* Pods_MTWebServiceManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTWebServiceManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29EB980268F66B4B81BA782E /* libPods-MTWebServiceManager_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTWebServiceManager_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A4E1AEA33436EB873BEE0D3 /* libPods-MTWebServiceManager_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTWebServiceManager_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FB160039FDD09C7DAF8670 /* Pods-MTWebServiceManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTWebServiceManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTWebServiceManager_Example/Pods-MTWebServiceManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		46C5DFD79559846CB23D397D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		590E7D368A77CF61E2B7862A /* Pods_MTWebServiceManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTWebServiceManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD01AFB9204008FA782 /* MTWebServiceManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTWebServiceManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* NetworkService_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkService_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* MTWebServiceManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTWebServiceManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* NetworkService_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkService_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		9AFE7CAD265C446000FDD2A8 /* NetworkService.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = NetworkService.podspec; path = ../NetworkService.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A708F0495A7A1C33ED5B42CD /* Pods-MTWebServiceManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTWebServiceManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTWebServiceManager_Tests/Pods-MTWebServiceManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C82AB4A8299870D6C3844BD6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E09DF9B4C932A1DDE0CA06C3 /* Pods-MTWebServiceManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTWebServiceManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTWebServiceManager_Tests/Pods-MTWebServiceManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009CCA7DF07F595B42ACC63D /* Pods_MTWebServiceManager_Example.framework in Frameworks */,
+				65182F6A8478F4D27DE1CA69 /* libPods-MTWebServiceManager_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24FF70859533BE22C2C9E27C /* Pods_MTWebServiceManager_Tests.framework in Frameworks */,
+				BFE5CA9EED5B1D58696CE01A /* libPods-MTWebServiceManager_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for MTWebServiceManager */,
+				607FACD21AFB9204008FA782 /* Example for NetworkService */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				55054D9A1D8F74075504E972 /* Pods */,
@@ -95,13 +95,13 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* MTWebServiceManager_Example.app */,
-				607FACE51AFB9204008FA782 /* MTWebServiceManager_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* NetworkService_Example.app */,
+				607FACE51AFB9204008FA782 /* NetworkService_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for MTWebServiceManager */ = {
+		607FACD21AFB9204008FA782 /* Example for NetworkService */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -111,7 +111,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for MTWebServiceManager";
+			name = "Example for NetworkService";
 			path = MTWebServiceManager;
 			sourceTree = "<group>";
 		};
@@ -143,7 +143,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				209BDE2A615FA65EE5C97E06 /* MTWebServiceManager.podspec */,
+				9AFE7CAD265C446000FDD2A8 /* NetworkService.podspec */,
 				46C5DFD79559846CB23D397D /* README.md */,
 				C82AB4A8299870D6C3844BD6 /* LICENSE */,
 			);
@@ -153,8 +153,8 @@
 		762694CFB46CED5FCA393B3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				590E7D368A77CF61E2B7862A /* Pods_MTWebServiceManager_Example.framework */,
-				28988EF756D00D3952084F87 /* Pods_MTWebServiceManager_Tests.framework */,
+				29EB980268F66B4B81BA782E /* libPods-MTWebServiceManager_Example.a */,
+				2A4E1AEA33436EB873BEE0D3 /* libPods-MTWebServiceManager_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,28 +162,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* MTWebServiceManager_Example */ = {
+		607FACCF1AFB9204008FA782 /* NetworkService_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MTWebServiceManager_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NetworkService_Example" */;
 			buildPhases = (
 				CEAC421C469259C9634A1AAA /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				0E34097287C4A11BBF007CA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MTWebServiceManager_Example;
+			name = NetworkService_Example;
 			productName = MTWebServiceManager;
-			productReference = 607FACD01AFB9204008FA782 /* MTWebServiceManager_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* NetworkService_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* MTWebServiceManager_Tests */ = {
+		607FACE41AFB9204008FA782 /* NetworkService_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MTWebServiceManager_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NetworkService_Tests" */;
 			buildPhases = (
 				673ED0B115003D7AD92999E9 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -195,9 +194,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = MTWebServiceManager_Tests;
+			name = NetworkService_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* MTWebServiceManager_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* NetworkService_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -225,7 +224,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "MTWebServiceManager" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "NetworkService" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,8 +237,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* MTWebServiceManager_Example */,
-				607FACE41AFB9204008FA782 /* MTWebServiceManager_Tests */,
+				607FACCF1AFB9204008FA782 /* NetworkService_Example */,
+				607FACE41AFB9204008FA782 /* NetworkService_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,24 +264,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E34097287C4A11BBF007CA5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MTWebServiceManager_Example/Pods-MTWebServiceManager_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MTWebServiceManager/MTWebServiceManager.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTWebServiceManager.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MTWebServiceManager_Example/Pods-MTWebServiceManager_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		673ED0B115003D7AD92999E9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +333,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* MTWebServiceManager_Example */;
+			target = 607FACCF1AFB9204008FA782 /* NetworkService_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -425,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -474,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -491,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3633CS8NU3;
 				INFOPLIST_FILE = MTWebServiceManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -510,6 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3633CS8NU3;
 				INFOPLIST_FILE = MTWebServiceManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -544,7 +527,7 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTWebServiceManager_Example.app/MTWebServiceManager_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkService_Example.app/NetworkService_Example";
 			};
 			name = Debug;
 		};
@@ -568,14 +551,14 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTWebServiceManager_Example.app/MTWebServiceManager_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkService_Example.app/NetworkService_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "MTWebServiceManager" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "NetworkService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -584,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MTWebServiceManager_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NetworkService_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -593,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MTWebServiceManager_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NetworkService_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

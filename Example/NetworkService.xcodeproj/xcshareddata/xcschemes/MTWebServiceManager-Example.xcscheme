@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "MTWebServiceManager_Example.app"
-               BlueprintName = "MTWebServiceManager_Example"
-               ReferencedContainer = "container:MTWebServiceManager.xcodeproj">
+               BuildableName = "NetworkService_Example.app"
+               BlueprintName = "NetworkService_Example"
+               ReferencedContainer = "container:NetworkService.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "MTWebServiceManager_Tests.xctest"
-               BlueprintName = "MTWebServiceManager_Tests"
-               ReferencedContainer = "container:MTWebServiceManager.xcodeproj">
+               BuildableName = "NetworkService_Tests.xctest"
+               BlueprintName = "NetworkService_Tests"
+               ReferencedContainer = "container:NetworkService.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "MTWebServiceManager_Example.app"
-            BlueprintName = "MTWebServiceManager_Example"
-            ReferencedContainer = "container:MTWebServiceManager.xcodeproj">
+            BuildableName = "NetworkService_Example.app"
+            BlueprintName = "NetworkService_Example"
+            ReferencedContainer = "container:NetworkService.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -56,9 +56,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "MTWebServiceManager_Tests.xctest"
-               BlueprintName = "MTWebServiceManager_Tests"
-               ReferencedContainer = "container:MTWebServiceManager.xcodeproj">
+               BuildableName = "NetworkService_Tests.xctest"
+               BlueprintName = "NetworkService_Tests"
+               ReferencedContainer = "container:NetworkService.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -78,9 +78,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "MTWebServiceManager_Example.app"
-            BlueprintName = "MTWebServiceManager_Example"
-            ReferencedContainer = "container:MTWebServiceManager.xcodeproj">
+            BuildableName = "NetworkService_Example.app"
+            BlueprintName = "NetworkService_Example"
+            ReferencedContainer = "container:NetworkService.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "MTWebServiceManager_Example.app"
-            BlueprintName = "MTWebServiceManager_Example"
-            ReferencedContainer = "container:MTWebServiceManager.xcodeproj">
+            BuildableName = "NetworkService_Example.app"
+            BlueprintName = "NetworkService_Example"
+            ReferencedContainer = "container:NetworkService.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

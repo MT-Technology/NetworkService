@@ -1,9 +1,9 @@
-# MTWebServiceManager
+# NetworkService
 
-[![CI Status](https://img.shields.io/travis/MT-Technology/MTWebServiceManager.svg?style=flat)](https://travis-ci.org/MT-Technology/MTWebServiceManager)
-[![Version](https://img.shields.io/cocoapods/v/MTWebServiceManager.svg?style=flat)](https://cocoapods.org/pods/MTWebServiceManager)
-[![License](https://img.shields.io/cocoapods/l/MTWebServiceManager.svg?style=flat)](https://cocoapods.org/pods/MTWebServiceManager)
-[![Platform](https://img.shields.io/cocoapods/p/MTWebServiceManager.svg?style=flat)](https://cocoapods.org/pods/MTWebServiceManager)
+[![CI Status](https://img.shields.io/travis/MT-Technology/MTWebServiceManager.svg?style=flat)](https://travis-ci.org/MT-Technology/NetworkService)
+[![Version](https://img.shields.io/cocoapods/v/MTWebServiceManager.svg?style=flat)](https://cocoapods.org/pods/NetworkService)
+[![License](https://img.shields.io/cocoapods/l/MTWebServiceManager.svg?style=flat)](https://cocoapods.org/pods/NetworkService)
+[![Platform](https://img.shields.io/cocoapods/p/MTWebServiceManager.svg?style=flat)](https://cocoapods.org/pods/NetworkService)
 
 ## Example
 
@@ -17,7 +17,7 @@ MTWebServiceManager is available through [CocoaPods](https://cocoapods.org). To 
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'MTWebServiceManager'
+pod 'NetworkService'
 ```
 
 ## Author
@@ -26,4 +26,4 @@ MT-Technology, mtes1992@gmail.com
 
 ## License
 
-MTWebServiceManager is available under the MIT license. See the LICENSE file for more info.
+NetworkService is available under the MIT license. See the LICENSE file for more info.

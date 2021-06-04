@@ -1,9 +1,10 @@
-use_frameworks!
+platform :ios, '11.0'
 
-target 'MTWebServiceManager_Example' do
-  pod 'MTWebServiceManager', :path => '../'
+target 'NetworkService_Example' do
 
-  target 'MTWebServiceManager_Tests' do
+  pod 'NetworkService', :path => '../'
+
+  target 'NetworkService_Tests' do
     inherit! :search_paths
 
     

@@ -1,5 +1,5 @@
 import XCTest
-import MTWebServiceManager
+
 
 class Tests: XCTestCase {
     
