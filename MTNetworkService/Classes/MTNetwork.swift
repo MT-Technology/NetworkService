@@ -52,7 +52,9 @@ class MTNetwork {
         
         if let error = errorResponse,
            let urlResponse = urlResponse as? HTTPURLResponse{
-            completion(.failure(.serverError(code: urlResponse.statusCode, message: error.localizedDescription)))
+            DispatchQueue.main.async {
+                completion(.failure(.serverError(code: urlResponse.statusCode, message: error.localizedDescription)))
+            }
             return
         }
         if let data = dataResponse,
@@ -61,7 +63,9 @@ class MTNetwork {
             response.data = data
             response.statusCode = urlResponse.statusCode
             response.headers = urlResponse.allHeaderFields
-            completion(.success(response))
+            DispatchQueue.main.async {
+                completion(.success(response))
+            }
             return
         }
     }
@@ -109,16 +113,12 @@ class MTNetwork {
             return nil
         }
         
-        let task = session.uploadTask(with: request, from: data) { [weak self] (dataResponse, urlResponse, errorResponse) in
-            guard let welf = self else {
-                completion(.failure(.genericError))
-                return
+        let task = session.uploadTask(with: request, from: data) { (dataResponse, urlResponse, errorResponse) in
+            DispatchQueue.global(qos: .background).async {
+                self.parseResponse(dataResponse: dataResponse, urlResponse: urlResponse, errorResponse: errorResponse, completion: completion)
             }
-            welf.parseResponse(dataResponse: dataResponse, urlResponse: urlResponse, errorResponse: errorResponse, completion: completion)
         }
         task.resume()
         return task
     }
 }
-
-
