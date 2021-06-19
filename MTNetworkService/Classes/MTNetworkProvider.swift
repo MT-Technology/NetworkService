@@ -24,20 +24,17 @@ public class MTNetworkProvider {
     var method: MTNetworkMethod
     var header: MTNetworkHeader
     var parameters: MTNetworkParameter
-    
-    private let network: MTNetwork
-    
+        
     public init (uri: MTNetworkUri){
         self.uri = uri
         self.method = .get
         self.header = MTNetworkHeader()
         self.parameters = MTNetworkParameter(requestType: .none)
-        self.network = MTNetwork()
     }
     
     @discardableResult
     public func executeTask(completion: @escaping (Result<MTNetworkResponse, MTNetworkError>) -> Void ) -> URLSessionTask? {
-        network.networkTask(provider: self, completion: completion)
+        MTNetwork().networkTask(provider: self, completion: completion)
     }
 }
 

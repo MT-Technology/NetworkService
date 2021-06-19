@@ -82,12 +82,8 @@ class MTNetwork {
         
         let session = getSession(provider: provider)
         
-        let task = session.dataTask(with: request) { [weak self] (dataResponse, urlResponse, errorResponse) in
-            guard let welf = self else {
-                completion(.failure(.genericError))
-                return
-            }
-            welf.parseResponse(dataResponse: dataResponse, urlResponse: urlResponse, errorResponse: errorResponse, completion: completion)
+        let task = session.dataTask(with: request) {(dataResponse, urlResponse, errorResponse) in
+            self.parseResponse(dataResponse: dataResponse, urlResponse: urlResponse, errorResponse: errorResponse, completion: completion)
         }
         task.resume()
         return task
